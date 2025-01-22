@@ -3,6 +3,7 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+
 jobs:
   primeiro-job:
     name: "Meu primeiro job."
@@ -19,9 +20,10 @@ jobs:
           variavel = "Hello Python!!"
           print(variavel)
         shell: python
+
   segundo-job:
     name: "Instalação do ambiente NodeJS"
     runs-on: ubuntu-latest
     steps:
-       - name: "Verificacão da versão do NodeJS atual"
+      - name: "Verificação da versão do NodeJS atual"
         run: node --version
