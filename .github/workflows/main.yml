@@ -15,9 +15,10 @@ jobs:
         run: |
           echo "Você criou seu primeiro Workflow !!!"
           echo "Parabéns !!!"
+      - name: "Verificação da versão do Python"
+        run: python --version    
       - name: "Script Python"
         run: |
-          --version
           variavel = "Hello Python!!"
           print(variavel)
         shell: python
