@@ -17,6 +17,7 @@ jobs:
           echo "Parabéns !!!"
       - name: "Script Python"
         run: |
+          python --version
           variavel = "Hello Python!!"
           print(variavel)
         shell: python
